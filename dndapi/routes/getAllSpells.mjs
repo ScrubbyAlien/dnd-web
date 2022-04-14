@@ -4,7 +4,7 @@ import express from 'express';
 const router = express.Router();
 
 router.get('/getAllSpells', (req, res) => {
-    console.log(getSpells.allSpells);
+    res.set('Access-Control-Allow-Origin', '*');
     res.status(200).json(getSpells.allSpells)
 })
 

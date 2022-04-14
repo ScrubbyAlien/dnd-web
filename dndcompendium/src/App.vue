@@ -15,17 +15,17 @@ export default {
     },
     methods: {
         getAllSpells: async function() {
-            await fetch('127.0.0.1:8080/getAllSpells')
+            console.log('enter func');
+            await fetch('http://127.0.0.1:8080/getAllSpells')
                 .then(res => res.json())
                 .then(data => {
-                    console.log(data);
                     this.spellList = data
                 });
             return this.spellList;
         }
     },
     mounted() {
-        // this.getAllSpells().then();
+        this.getAllSpells().then();
     }
 }
 </script>
