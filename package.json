@@ -1,0 +1,20 @@
+{
+  "name": "dndweb",
+  "version": "1.0.0",
+  "description": "dnd web tools and api",
+  "main": "index.js",
+  "scripts": {
+	"dev": "./start-dev.sh dndcompendium-dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ScrubbyAlien/dnd-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ScrubbyAlien/dnd-web/issues"
+  },
+  "homepage": "https://github.com/ScrubbyAlien/dnd-web#readme"
+}
