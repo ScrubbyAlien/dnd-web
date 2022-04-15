@@ -1,0 +1,53 @@
+/* https://fonts.google.com/specimen/IM+Fell+English */
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap');
+
+* {
+    font-family: 'IM Fell English', serif;
+}
+
+
+
+
+
+/* Flex classes */
+.flex {
+    display: flex;
+}
+
+.flow-col-nw {
+    flex-flow: column nowrap;
+}
+
+.flow-row-nw {
+    flex-flow: row nowrap;
+}
+
+.flow-col-w {
+    flex-flow: column wrap;
+}
+
+.flow-row-w {
+    flex-flow: row wrap;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.justify-content-around {
+    justify-content: space-around;
+}
+
+.c-gap-5px {
+    column-gap: 5px;
+}
+
+.r-gap-5px {
+    row-gap: 5px;
+}
+
+
+/* Widths */
+.width-200px {
+    width: 200px;
+}

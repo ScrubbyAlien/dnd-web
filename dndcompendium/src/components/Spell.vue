@@ -10,15 +10,16 @@ export default {
 
 <template>
 
-<div>
-    <p>
-        {{ text }}
-    </p>
-</div>
-
+    <div class="border">
+        <span>
+            {{ text }}
+        </span>
+    </div>
 
 </template>
 
-<style>
-
+<style scoped>
+.border {
+    border: 1px solid #000000
+}
 </style>
