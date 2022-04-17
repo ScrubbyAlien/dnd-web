@@ -20,7 +20,7 @@ export default {
             <div class="flex flow-col-nw width-200px r-gap-5px">
 
                 <div class="grow" v-for="(spell, index) in list" :key="spell.name">
-                    <Spell :text="`${index}. ${spell.name}`" />
+                    <Spell :text="`${index + 1}. ${spell.spell_name}, Level: ${spell.spell_level}`" />
                 </div>
 
             </div>

@@ -17,12 +17,10 @@ export default {
     },
     methods: {
         getAllSpells: async function () {
-            await fetch('http://127.0.0.1:8080/getAllSpells')
+            await fetch('http://127.0.0.1:8080/getSpellPage')
                 .then(res => res.json())
                 .then(data => {
-                    this.spellList = data.sort((a, b) => {
-                        a.name > b.name ? -1 : 1
-                    })
+                    this.spellList = data
                 });
             return this.spellList;
         }

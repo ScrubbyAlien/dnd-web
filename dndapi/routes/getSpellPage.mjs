@@ -4,6 +4,8 @@ import express from 'express';
 const router = express.Router();
 
 router.get('/getSpellPage', async (req, res) => {
+    res.set('Access-Control-Allow-Origin', '*');
+
     const pagenum = parseInt(req.query.page, 10) || undefined;
     const pagesize = parseInt(req.query.size, 10) || undefined;
     const ordering = parseArray(req.query.ordering) || parseObject(req.query.ordering);
